@@ -1,0 +1,280 @@
+/* ---------------- INDEX PAGE -------------------- */
+h1 {
+  text-align: center;
+  color: red;
+  text-shadow: 4px 4px 5px maroon;
+}
+
+/* Background image */
+/* html {
+  background-image: url(triangle1.jpg);
+} */
+
+/* .field {
+  border-radius: 50%;
+} */
+
+/* links */
+a {
+  text-decoration: none;
+}
+
+/* Hello World */
+.title {
+  color: magenta;
+}
+
+/* ul e li na nav */
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding: 30px;
+  display: inline-block;
+}
+
+#italic {
+  color: darkgreen;
+}
+
+/* DIV */
+.container {
+  border: 10px dashed blue;
+  margin: 50px 5px 25px 0px; /* top, right, bottom, left */
+  padding: 30px 5px 30px 5px;
+}
+
+/* Div box */
+.box {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background: blue;
+}
+
+/* Navbar */
+nav {
+  text-align: center;
+  background-color: lime;
+}
+
+.nav-wrapper {
+  background-color: darkblue;
+}
+
+/* images */
+.circleImg {
+  border-radius: 50%;
+  box-shadow: 10px 8px 10px 8px rgb(154, 159, 160);
+}
+
+/* Flexbox */
+.flex {
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: space-around;
+  /* padding: 100px; */
+}
+
+/* animation */
+@keyframes fadeMe {
+  0% {
+    /* começo da animação */
+    opacity: 1;
+  }
+  100% {
+    /* fim da animação */
+    opacity: 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes getBigger {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: gray;
+  }
+  25% {
+    background-color: purple;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: pink;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+@keyframes moveBox {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 100px;
+    top: 0px;
+  }
+  50% {
+    left: 100px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Caixas de teste */
+#box1 {
+  animation-name: fadeMe;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#box2 {
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-radius: 10%;
+  background-image: radial-gradient(
+    circle,
+    purple,
+    orange,
+    yellow,
+    pink,
+    purple
+  );
+}
+
+#box3 {
+  animation: getBigger infinite 8s ease-in;
+  border-radius: 50%;
+  background: orange;
+}
+
+#box4 {
+  animation: changeColor 7s infinite;
+}
+
+#box5 {
+  position: relative;
+  animation: moveBox 5s infinite;
+}
+
+#box6 {
+  top: 10px;
+  left: 20px;
+  position: relative;
+}
+
+/* ----------------FIM DA INDEX-------------------- */
+/* ---------------- CONTACT PAGE-------------------- */
+
+form input,
+textarea,
+button {
+  display: block;
+  margin: 30px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  margin: 30px;
+}
+
+.input-field {
+  margin: 20px;
+}
+
+/* -------------- ABOUT ------------------------- */
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, [col] 20%);
+  grid-template-rows: repeat(3, [row] auto);
+  background-color: #fff;
+  color: #444;
+}
+
+.Box {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  z-index: 10;
+}
+
+.A {
+  grid-column: col / span 2;
+  grid-row: row;
+  justify-content: center;
+}
+.B {
+  grid-column: col 4 / span 2;
+  grid-row: row;
+  justify-content: center;
+}
+.C {
+  grid-column: col / span 5;
+  grid-row: row 2;
+  justify-content: center;
+  background-image: linear-gradient(pink, yellow, purple, orange);
+}
+.D {
+  grid-column: col 1 / span 3;
+  grid-row: row 3;
+  justify-content: center;
+}
+.E {
+  grid-column: col 3 / span 3;
+  grid-row: row 3;
+  justify-content: center;
+}
+.F {
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
+  background-color: rgba(49, 121, 207, 0.5);
+  z-index: 20;
+  justify-content: center;
+  background-image: linear-gradient(orange, purple, yellow, pink);
+}
